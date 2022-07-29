@@ -18,7 +18,7 @@ func (c *CrossDown) Check() bool {
 	firstValues := c.firstValues
 	secondValues := c.secondValues
 	if firstValues[len(firstValues)-c.indexBar] < secondValues[len(secondValues)-c.indexBar] &&
-		firstValues[len(firstValues)-(c.indexBar-1)] > secondValues[len(secondValues)-(c.indexBar-1)] {
+		firstValues[len(firstValues)-c.indexBar-1] > secondValues[len(secondValues)-c.indexBar-1] {
 		return true
 	}
 	return false
