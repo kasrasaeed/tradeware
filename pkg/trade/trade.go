@@ -21,3 +21,11 @@ func (t *Trade) AppendLongStrategy(longStrategies ...*strategy.Strategy) {
 func (t *Trade) AppendShortStrategy(shortStrategies ...*strategy.Strategy) {
 	t.shortStrategies = append(t.shortStrategies, shortStrategies...)
 }
+
+func (t *Trade) GetLongStrategies() []*strategy.Strategy {
+	return t.longStrategies
+}
+
+func (t *Trade) GetShortStrategies() []*strategy.Strategy {
+	return t.shortStrategies
+}
