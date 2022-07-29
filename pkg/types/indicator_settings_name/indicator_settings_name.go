@@ -1,0 +1,3 @@
+package indicator_settings_name
+
+type IndicatorSettingsAttrName int
