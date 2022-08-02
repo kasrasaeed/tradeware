@@ -1,6 +1,6 @@
 package trade
 
-import "github.com/kasrasaeed/tradeware/v2/pkg/strategy"
+import "github.com/kasrasaeed/tradeware/v3/pkg/strategy"
 
 type Trade struct {
 	longStrategies  []*strategy.Strategy

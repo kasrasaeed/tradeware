@@ -1,9 +1,9 @@
 package tradeware
 
 import (
-	"github.com/kasrasaeed/tradeware/v2/pkg/indicator"
-	"github.com/kasrasaeed/tradeware/v2/pkg/types/source_name"
-	"github.com/kasrasaeed/tradeware/v2/pkg/types/timeframe"
+	"github.com/kasrasaeed/tradeware/v3/pkg/indicator"
+	"github.com/kasrasaeed/tradeware/v3/pkg/types/source_name"
+	"github.com/kasrasaeed/tradeware/v3/pkg/types/timeframe"
 )
 
 type TradeWare struct {

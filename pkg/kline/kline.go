@@ -1,7 +1,7 @@
 package kline
 
 import (
-	"github.com/kasrasaeed/tradeware/v2/pkg/types/timeframe"
+	"github.com/kasrasaeed/tradeware/v3/pkg/types/timeframe"
 )
 
 type Kline struct {

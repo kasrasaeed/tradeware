@@ -1,8 +1,8 @@
 package indicator
 
 import (
-	"github.com/kasrasaeed/tradeware/v2/pkg/types/indicator_name"
-	"github.com/kasrasaeed/tradeware/v2/pkg/types/timeframe"
+	"github.com/kasrasaeed/tradeware/v3/pkg/types/indicator_name"
+	"github.com/kasrasaeed/tradeware/v3/pkg/types/timeframe"
 )
 
 type Atr struct {

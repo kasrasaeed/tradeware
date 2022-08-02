@@ -1,6 +1,6 @@
 package strategy
 
-import "github.com/kasrasaeed/tradeware/v2/pkg/rules"
+import "github.com/kasrasaeed/tradeware/v3/pkg/rules"
 
 type IStrategy interface {
 	AddEntryRule(er rules.Rules)

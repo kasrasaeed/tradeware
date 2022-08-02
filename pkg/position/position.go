@@ -1,9 +1,9 @@
 package position
 
 import (
-	"github.com/kasrasaeed/tradeware/v2/pkg/qty"
-	"github.com/kasrasaeed/tradeware/v2/pkg/types/price"
-	"github.com/kasrasaeed/tradeware/v2/pkg/types/side"
+	"github.com/kasrasaeed/tradeware/v3/pkg/qty"
+	"github.com/kasrasaeed/tradeware/v3/pkg/types/price"
+	"github.com/kasrasaeed/tradeware/v3/pkg/types/side"
 )
 
 type Position struct {

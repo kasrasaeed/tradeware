@@ -1,7 +1,7 @@
 package indicator
 
 import (
-	"github.com/kasrasaeed/tradeware/v2/pkg/types/indicator_settings_name"
+	"github.com/kasrasaeed/tradeware/v3/pkg/types/indicator_settings_name"
 )
 
 type IndicatorSettingsAttr struct {

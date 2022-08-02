@@ -1,7 +1,7 @@
 package strategy
 
 import (
-	"github.com/kasrasaeed/tradeware/v2/pkg/rules"
+	"github.com/kasrasaeed/tradeware/v3/pkg/rules"
 )
 
 type Strategy struct {
