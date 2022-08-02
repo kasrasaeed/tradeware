@@ -32,6 +32,21 @@ func (s *Strategy) AddStopLossRule(slr rules.Rules) {
 	s.stopLossRules = append(s.stopLossRules, slr)
 }
 
+func (s *Strategy) UpdateEntryRules(er ...rules.Rules) {
+	s.entryRules = make([]rules.Rules, 0)
+	s.entryRules = append(s.entryRules, er...)
+}
+
+func (s *Strategy) UpdateTakeProfitRules(tp ...rules.Rules) {
+	s.takeProfitRules = make([]rules.Rules, 0)
+	s.takeProfitRules = append(s.takeProfitRules, tp...)
+}
+
+func (s *Strategy) UpdateStopLossRules(sl ...rules.Rules) {
+	s.stopLossRules = make([]rules.Rules, 0)
+	s.stopLossRules = append(s.stopLossRules, sl...)
+}
+
 func (s *Strategy) CheckEntry() bool {
 	for _, v := range s.entryRules {
 		if !v.Check() {
