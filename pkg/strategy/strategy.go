@@ -11,13 +11,20 @@ type Strategy struct {
 	stopLossRules   []rules.Rules
 }
 
-func New(name string, entryRules, takeProfitRules, stopLossRules []rules.Rules) *Strategy {
+func New() *Strategy {
 	return &Strategy{
-		name:            name,
-		entryRules:      entryRules,
-		takeProfitRules: takeProfitRules,
-		stopLossRules:   stopLossRules,
+		name:            "",
+		entryRules:      make([]rules.Rules, 0),
+		takeProfitRules: make([]rules.Rules, 0),
+		stopLossRules:   make([]rules.Rules, 0),
 	}
+}
+func (s *Strategy) SetName(name string) {
+	s.name = name
+}
+
+func (s *Strategy) GetName() string {
+	return s.name
 }
 
 func (s *Strategy) AddEntryRule(er rules.Rules) {
