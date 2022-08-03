@@ -5,4 +5,5 @@ const (
 	EmaLength
 	AtrLength
 	Multiplier
+	RsiLength
 )

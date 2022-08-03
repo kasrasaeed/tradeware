@@ -6,4 +6,5 @@ const (
 	SUPER_TREND
 	KELTNER_WIDTH
 	ATR
+	RSI
 )

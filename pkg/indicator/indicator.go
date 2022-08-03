@@ -54,6 +54,13 @@ func (i *Indicator) SetName(name indicator_name.IndicatorName) {
 
 func (i *Indicator) SetSettings(source *source_name.SourceName, attrs ...IndicatorSettingsAttr) {
 	switch i.Settings.(type) {
+	case *RsiSettings:
+		for _, v := range attrs {
+			if v.Attr == indicator_settings_name.RsiLength {
+				i.Settings.(*RsiSettings).RsiLength = (int)(v.Value)
+			}
+		}
+		i.Settings.(*RsiSettings).SourceName = *source
 	case *AdxSettings:
 		for _, v := range attrs {
 			if v.Attr == indicator_settings_name.AdxLength {
