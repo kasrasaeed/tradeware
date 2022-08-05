@@ -7,4 +7,5 @@ const (
 	KELTNER_WIDTH
 	ATR
 	RSI
+	DEMA
 )

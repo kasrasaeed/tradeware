@@ -6,4 +6,5 @@ const (
 	AtrLength
 	Multiplier
 	RsiLength
+	DemaLength
 )
