@@ -8,4 +8,5 @@ const (
 	ATR
 	RSI
 	DEMA
+	SMA
 )

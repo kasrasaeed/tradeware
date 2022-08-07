@@ -7,4 +7,5 @@ const (
 	Multiplier
 	RsiLength
 	DemaLength
+	SmaLength
 )

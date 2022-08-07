@@ -25,6 +25,8 @@ func (i *Indicator) GetName() indicator_name.IndicatorName {
 
 func (i *Indicator) GetSettings() types.IndicatorSettings {
 	switch i.Settings.(type) {
+	case *SmaSettings:
+		return i.Settings.(*SmaSettings)
 	case *DemaSettings:
 		return i.Settings.(*DemaSettings)
 	case *RsiSettings:
@@ -58,6 +60,12 @@ func (i *Indicator) SetName(name indicator_name.IndicatorName) {
 
 func (i *Indicator) SetSettings(source *source_name.SourceName, attrs ...IndicatorSettingsAttr) {
 	switch i.Settings.(type) {
+	case *SmaSettings:
+		for _, v := range attrs {
+			if v.Attr == indicator_settings_name.SmaLength {
+				i.Settings.(*SmaSettings).SmaLength = int(v.Value)
+			}
+		}
 	case *DemaSettings:
 		for _, v := range attrs {
 			if v.Attr == indicator_settings_name.DemaLength {
