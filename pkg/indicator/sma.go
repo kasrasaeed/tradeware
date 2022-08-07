@@ -2,6 +2,7 @@ package indicator
 
 import (
 	"github.com/kasrasaeed/tradeware/v3/pkg/types/indicator_name"
+	"github.com/kasrasaeed/tradeware/v3/pkg/types/source_name"
 	"github.com/kasrasaeed/tradeware/v3/pkg/types/timeframe"
 )
 
@@ -14,7 +15,8 @@ func NewSma() IIndicator {
 		Indicator{
 			Name: indicator_name.SMA,
 			Settings: &SmaSettings{
-				SmaLength: 20,
+				SmaLength:  20,
+				SourceName: source_name.Volume,
 			},
 			TimeFrame: timeframe.FifteenMin,
 			Value:     make([]float64, 0, 0),
@@ -23,5 +25,6 @@ func NewSma() IIndicator {
 }
 
 type SmaSettings struct {
-	SmaLength int
+	SmaLength  int
+	SourceName source_name.SourceName
 }

@@ -9,4 +9,5 @@ const (
 	Hlc3
 	Ohlc4
 	Hlcc4
+	Volume
 )
